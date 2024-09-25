@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayankesh</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Preloader Section -->
+  <div id="preloader">
+      <img src="./images/Ayankesh-logo.png" alt="Loading..." width="250" />
+  </div>
+  <div id="main-content" style="display: none;">
+<header>
+  <nav>
+    <div class="logo">
+      <img src="./images/Ayankesh-logo.png" alt="Ayankesh Logo" width="150">
+    </div>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact Us</a>
+      
+    </div>
+       
+    <div class="hamburger" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+</header>
+
+<!-- Sample sections -->
+<!-- Hero Section with Slideshow -->
+    <section id="home" class="hero">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <div class="hero-content">
+                    <h1>Authentic Talking Drums</h1>
+                    <p>Crafted with passion and tradition.</p>
+                    <a href="#products" class="hero-btn">Explore Products</a>
+                </div>
+                <img src="images/drum1.jpg" alt="Talking Drum 1" class="hero-image">
+            </div>
+            <div class="slide fade">
+                <div class="hero-content">
+                    <h1>Quality Craftsmanship</h1>
+                    <p>Bringing you the finest African drums.</p>
+                    <a href="#products" class="hero-btn">Explore Products</a>
+                </div>
+                <img src="images/drum2.jpeg" alt="Talking Drum 2" class="hero-image">
+            </div>
+            <div class="slide fade">
+                <div class="hero-content">
+                    <h1>Experience the Rhythm</h1>
+                    <p>Feel the beat of our authentic talking drums.</p>
+                    <a href="#products" class="hero-btn">Explore Products</a>
+                </div>
+                <img src="images/drum3.jpg" alt="Talking Drum 3" class="hero-image">
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    We are a proud manufacturer of traditional talking drums, preserving the rich culture of Nigerian music. 
+                    Our talking drums are handmade using age-old techniques passed down through generations.
+                </p>
+                <p>
+                    With precision and passion, we create unique instruments that tell stories, convey messages, and keep 
+                    the cultural heritage of African music alive.
+                </p>
+                <a href="#contact" class="about-btn">Get in Touch</a>
+            </div>
+            <div class="about-image">
+                <img src="images/drum5.jpg" alt="Talking Drum Workshop">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Product Section with Pagination -->
+<section class="products" id="products">
+    <div class="container">
+        
+    <h2>Our Products</h2>
+    <div id="product-grid" class="product-grid">
+        <!-- Products will be dynamically generated here -->
+    </div>
+
+    <!-- Pagination -->
+    <div id="pagination" class="pagination"></div>
+</div>
+
+			
+			
+     
+
+        <!-- Pagination -->
+      
+   
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Ayankesh Talking Drum Manufacturing Company. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://tiktok.com/@ayankech" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="50" height="50"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></a>
+            <a href="https://https://www.facebook.com/profile.php?id=61551221597221" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="50" height="50"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg></a>
+            
+        </div>
+		<div><p>powered by <a href="#" target="_blank">Ironborne_Solutions</a></p></div>
+    </div>
+</footer>
+
+
+</div>
+
+<script>
+  window.addEventListener('load', () => {
+      setTimeout(() => {
+          const preloader = document.getElementById('preloader');
+          const mainContent = document.getElementById('main-content');
+          
+          // Add the fade-out class to start fading out
+          preloader.classList.add('fade-out');
+
+          // Wait for the fade-out transition to complete before hiding the preloader
+          setTimeout(() => {
+              preloader.style.display = 'none';  // Completely hide preloader
+              mainContent.style.display = 'block';  // Show main content
+              
+              // Add the visible class to fade-in the main content
+              mainContent.classList.add('visible');
+          }, 500);  // Wait for the CSS transition (0.5s)
+          
+      }, 2000);  // Keep preloader for 2 seconds before starting the fade-out
+  });
+</script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Function to toggle the hamburger menu
+    const toggleMenu = () => {
+        const navLinks = document.querySelector('.nav-links');
+        const hamburger = document.querySelector('.hamburger');
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('toggle');
+    };
+
+    // Add click event to hamburger menu
+    document.querySelector('.hamburger').addEventListener('click', toggleMenu);
+
+    // Close the menu when a nav link is clicked
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.remove('active');
+            document.querySelector('.hamburger').classList.remove('toggle');
+        });
+    });
+
+   let slideIndex = 0;
+showSlides();
+
+// Function to display slides
+function showSlides() {
+    let slides = document.querySelectorAll('.slide');
+    let dots = document.querySelectorAll('.dot');
+
+    // Hide all slides
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+
+    // Remove active class from all dots
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove('active');
+    }
+
+    // Move to the next slide
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+
+    // Show the current slide and add active class to the corresponding dot
+    slides[slideIndex - 1].style.display = 'block';
+    dots[slideIndex - 1].classList.add('active');
+
+    // Change slide every 5 seconds
+    setTimeout(showSlides, 5000);
+}
+
+// Manual navigation using dots
+function currentSlide(n) {
+    slideIndex = n;
+    showSlides();
+}
+
+});
+
+</script>
+<script>
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) { // Scroll amount in pixels
+        nav.style.backgroundColor = 'rgba(255, 255, 255, 0.6)'; // Less transparent on scroll
+        nav.style.backdropFilter = 'blur(15px)'; // Increase the blur effect
+        nav.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)'; // Darker shadow
+    } else {
+        nav.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'; // Initial transparency
+        nav.style.backdropFilter = 'blur(10px)'; // Reset blur
+        nav.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.1)'; // Reset shadow
+    }
+});
+</script>
+<script>
+    // Sample product data
+    const products = [
+        { name: 'Talking Drum', description: 'Strong and Durable', image: 'images/drum1.jpg' },
+        { name: 'Agbamole', description: 'Strong and Durable', image: 'images/agbamole.jpg' },
+        { name: 'Cord', description: 'Strong and Durable', image: 'images/cord.jpg' },
+        { name: 'Drum Sticks', description: 'Strong and Durable', image: 'images/drum-stick.jpg' },
+        { name: 'Flaps', description: 'Strong and Durable', image: 'images/flap.jpg' },
+        { name: 'Iya Ilu', description: 'Strong and Durable', image: 'images/iya-ilu.jpg' },
+        { name: 'Odo', description: '', image: 'images/odo.jpg' },
+        { name: 'Omele Bata', description: '', image: 'images/omele-bata.jpg' },
+        { name: 'Omele Bata Small and Big', description: '', image: 'images/omele-bata-small-and-big.jpg' },
+		{ name: 'Opa', description: '', image: 'images/opa.jpg' },
+		{ name: 'Osan', description: '', image: 'images/osan.jpg' },
+		{ name: 'Pedal', description: '', image: 'images/pedal.jpg' },
+		{ name: 'Shekere', description: '', image: 'images/shekere.jpg' },
+		{ name: 'Snare', description: '', image: 'images/snare1.jpg' },
+		{ name: 'Zenon', description: 'Blue Colour', image: 'images/zenon-blue.jpg' },
+		{ name: 'Zenon', description: 'Red Colour', image: 'images/zenon-red.jpg' },
+        { name: 'Omele Gangan', description: '', image: 'images/omele-gangan.jpg' }
+    ];
+
+    const productsPerPage = 6; // Products to show per page
+    let currentPage = 1; // Start on the first page
+
+    // Replace with your company's WhatsApp number (in international format, e.g., +234 for Nigeria)
+    const whatsappNumber = "+23491351455574"; 
+
+    // Function to display products
+    function showProducts(page) {
+        const productGrid = document.getElementById('product-grid');
+        productGrid.innerHTML = ''; // Clear previous content
+
+        const start = (page - 1) * productsPerPage;
+        const end = start + productsPerPage;
+        const visibleProducts = products.slice(start, end); // Get products for this page
+
+        visibleProducts.forEach((product) => {
+            const productElement = document.createElement('div');
+            productElement.classList.add('product-item');
+
+            // Generate WhatsApp message with product name and link
+            const message = `I would like to purchase: ${product.name}.`;
+            const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+
+            productElement.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <h3>${product.name}</h3>
+                <p>${product.description}</p>
+                <a href="${whatsappLink}" target="_blank">
+                    <button class="product-btn">Buy Now</button>
+                </a>
+            `;
+            productGrid.appendChild(productElement);
+        });
+
+        updatePagination(); // Update the pagination buttons
+    }
+
+    // Function to create pagination buttons
+    function updatePagination() {
+        const paginationContainer = document.getElementById('pagination');
+        paginationContainer.innerHTML = ''; // Clear previous pagination buttons
+
+        const totalPages = Math.ceil(products.length / productsPerPage); // Calculate total pages
+
+        for (let i = 1; i <= totalPages; i++) {
+            const button = document.createElement('button');
+            button.innerText = i;
+            button.classList.add('pagination-button');
+            if (i === currentPage) {
+                button.classList.add('active');
+            }
+
+            button.addEventListener('click', () => {
+                currentPage = i;
+                showProducts(currentPage);
+            });
+
+            paginationContainer.appendChild(button);
+        }
+    }
+
+    // Load products for the first time
+    showProducts(currentPage);
+</script>
+
+</body>
+</html>
